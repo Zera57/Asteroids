@@ -32,37 +32,37 @@ namespace MyGame
     //Планеты
     class AlienPlanet : Planet
     {
-        public AlienPlanet(Point pos) : base(pos, new Size(130, 130), System.IO.Path.GetFullPath(@"PNG space\AlienPlanet.png"))
+        public AlienPlanet(Point pos) : base(pos, new Size(130, 130), @"PNG space\AlienPlanet.png")
         {
         }
     }
     class Earth : Planet
     {
-        public Earth(Point pos) : base(pos, new Size(150, 150), System.IO.Path.GetFullPath(@"PNG space\Earth.png"))
+        public Earth(Point pos) : base(pos, new Size(150, 150), @"PNG space\Earth.png")
         {
         }
     }
     class Jupiter : Planet
     {
-        public Jupiter(Point pos) : base(pos, new Size(140, 120), System.IO.Path.GetFullPath(@"PNG space\Jupiter.png"))
+        public Jupiter(Point pos) : base(pos, new Size(140, 120), @"PNG space\Jupiter.png")
         {
         }
     }
     class MagmaPlanet : Planet
     {
-        public MagmaPlanet(Point pos) : base(pos, new Size(100, 100), System.IO.Path.GetFullPath(@"PNG space\MagmaPlanet.png"))
+        public MagmaPlanet(Point pos) : base(pos, new Size(100, 100), @"PNG space\MagmaPlanet.png")
         {
         }
     }
     class PinkPlanet : Planet
     {
-        public PinkPlanet(Point pos) : base(pos, new Size(175, 175), System.IO.Path.GetFullPath(@"PNG space\PinkPlanet.png"))
+        public PinkPlanet(Point pos) : base(pos, new Size(175, 175), @"PNG space\PinkPlanet.png")
         {
         }
     }
     class Sun : Planet
     {
-        public Sun(Point pos) : base(pos, new Size(380, 380), System.IO.Path.GetFullPath(@"PNG space\Sun.png"))
+        public Sun(Point pos) : base(pos, new Size(380, 380), @"PNG space\Sun.png")
         {
         }
     }
