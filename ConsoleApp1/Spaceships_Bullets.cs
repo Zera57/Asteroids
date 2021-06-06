@@ -10,7 +10,7 @@ namespace MyGame
     //Пуля
     class Bullet : BaseObject, ICollision, IDisposable
     {
-        Image laser = Image.FromFile(@"PNG space\Laser.png");
+        static Image laser = Image.FromFile(@"PNG space\Laser.png");
 
         public Bullet(Point pos, Point dir) : base(pos, dir, new Size(25, 6))
         {
@@ -28,8 +28,6 @@ namespace MyGame
 
 		public void Dispose()
 		{
-			laser.Dispose();
-			laser = null;
 			GC.SuppressFinalize(this);
 		}
 
@@ -188,7 +186,7 @@ namespace MyGame
 	{
 		public bool Exist { get; private set; }
 		Image Img = Image.FromFile(@"PNG space\ToolCase.png");
-		int Heal;
+		public int Heal { get; private set; }
 
 		public HealPack(Point pos) : base(pos, new Point(-5, 0), new Size(30, 30))
 		{

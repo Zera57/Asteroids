@@ -179,7 +179,7 @@ namespace MyGame
 				healPack.Update();
 
 				if (healPack.Collision(player))
-					player.Get_Damage(-50);
+					player.Get_Damage(-healPack.Heal);
 			}
 			if (!timerEnemy.Enabled && !enemy.Alive)
 			{
