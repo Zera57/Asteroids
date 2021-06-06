@@ -66,23 +66,26 @@ namespace MyGame
 
 		private static void Form_KeyDown(object sender, KeyEventArgs e)
 		{
-			switch (e.KeyValue)
+			switch (e.KeyCode)
 			{
-				case 38:
+				case Keys.Up:
 					player.Dir = new Point(0, -1);
 					break;
-				case 40:
+				case Keys.Down:
 					player.Dir = new Point(0, 1);
 					break;
-				case 37:
+				case Keys.Left:
 					player.Dir = new Point(-1, 0);
 					break;
-				case 39:
+				case Keys.Right:
 					player.Dir = new Point(1, 0);
 					break;
-				case 32:
+				case Keys.Space:
 					player.Dir = new Point(0, 0);
 					player.Shoot();
+					break;
+				case Keys.Escape:
+					System.Environment.Exit(0);
 					break;
 				default:
 					//Console.WriteLine("Default case");
